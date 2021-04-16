@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ParticleMovement : MonoBehaviour
 {
-    public float partSpeed = 1;
+    float partSpeed = 1;
     public Rigidbody rb;
+    public AllQuarkScript all;
     // Start is called before the first frame update
     void Start()
     {
+        all = transform.parent.GetComponent<AllQuarkScript>();
         Physics.IgnoreLayerCollision(8,8);
         rb = GetComponent<Rigidbody>();
 
@@ -18,6 +20,7 @@ public class ParticleMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        partSpeed = all.quarkSpeed;
         rb.velocity = partSpeed * (rb.velocity.normalized);
     }
 
