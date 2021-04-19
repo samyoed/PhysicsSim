@@ -40,7 +40,7 @@ public class ParticleCenterScript : MonoBehaviour
             currChild.localScale = new Vector3(transform.localScale.x, length.magnitude*2, transform.localScale.z);
             stretchFactor += length.magnitude;
         }
-        stretchFactor = (1/(stretchFactor/stretchScale));
+        stretchFactor = ((1/(stretchFactor/stretchScale)) -.5f);
         //stretching
         for(int i = 0; i < particleCount; i++){
             Transform currChild = transform.GetChild(i);
