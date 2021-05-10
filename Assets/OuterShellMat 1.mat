@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OuterShellMat 1
-  m_Shader: {fileID: -6465566751694194690, guid: 70b8305c41aca6940ad1e4384b1b6626,
+  m_Shader: {fileID: -6465566751694194690, guid: bb89abe201d73164cb1e56c28ae8f750,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,6 +33,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_022a4fddde1341bd9c3a85fc45410302: 0
     - Vector1_b964c76286b349e58730873281d02e24: 3
-    m_Colors: []
+    m_Colors:
+    - Color_1a9c160561294cbc9d194abde2b5a692: {r: 0.4289763, g: 4.929155, b: 6.062866,
+        a: 0}
   m_BuildTextureStacks: []

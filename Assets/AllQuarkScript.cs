@@ -16,6 +16,7 @@ public class AllQuarkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        quarkSpeed = speedSlider.value;
+        // quarkSpeed = speedSlider.value;
+        Time.timeScale = speedSlider.value;
     }
 }

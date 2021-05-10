@@ -39,14 +39,20 @@ public class ParticleCenterScript : MonoBehaviour
             Vector3 length = transform.position - partList[i].position;
             currChild.localScale = new Vector3(transform.localScale.x, length.magnitude*2, transform.localScale.z);
             stretchFactor += length.magnitude;
+            
+            Transform currChildMesh = currChild.GetChild(0);
+            currChildMesh.gameObject.GetComponent<Renderer>().material.SetVector("Tiling Scale", new Vector4(0.5f, 1.5f /( length.magnitude * 2), 0, 0));
+
         }
         stretchFactor = ((1/(stretchFactor/stretchScale)) -.5f);
-        //stretching
+        //varying width
         for(int i = 0; i < particleCount; i++){
             Transform currChild = transform.GetChild(i);
             currChild.localScale = new Vector3(stretchFactor,
                                                currChild.localScale.y,
                                                stretchFactor);
+            
+            
         }
         
     }
