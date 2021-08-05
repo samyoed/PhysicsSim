@@ -18,6 +18,7 @@ public class ParticleCenterScript : MonoBehaviour
             partList.Add(parent.GetChild(i));
         }
         
+        
     }
 
     // Update is called once per frame
@@ -28,6 +29,12 @@ public class ParticleCenterScript : MonoBehaviour
         }
         transform.position = sum/particleCount;
         ConnectLines();
+    }
+    void LateUpdate(){
+        partList = new List<Transform>();
+        for(int i = 0 ; i < particleCount; i++){
+            partList.Add(parent.GetChild(i));
+        }
     }
 
     //stretch and use gluons to connect quarks to the center

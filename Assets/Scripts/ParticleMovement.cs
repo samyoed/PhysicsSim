@@ -7,6 +7,8 @@ public class ParticleMovement : MonoBehaviour
     float partSpeed = 1;
     public Rigidbody rb;
     public AllQuarkScript all;
+
+
     // Start is called before the first frame update
     void Start()
     {
