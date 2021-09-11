@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FluxTubeFrensel
+  m_Shader: {fileID: -6465566751694194690, guid: f67ceffd81cd5314ca58608890f13c98,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlbedoTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _EdgeFadeDistance: 0.6
+    - _EdgeFadeEffect: 0
+    - _EdgeFadeHardness: 0
+    - _FrenselOpacityHardness: 0.781
+    - _FrensnelOpacityPower: 0.62
+    - _FresnelOpacityEffect: 1
+    - _Metallic: 0
+    - _Smoothness: 0
+    m_Colors:
+    - _Albedo: {r: 1, g: 1, b: 1, a: 0.34509805}
+    - _EmissionColor: {r: 0.047169805, g: 0.28147227, b: 1, a: 0}
+    - _GluonAnticolor: {r: 1.0592737, g: 1.0592737, b: 0, a: 1}
+    - _GluonAnticolorFadeDistance: {r: 0, g: 0.6, b: 0, a: 0}
+    - _GluonAnticolorPosition: {r: 1000000, g: 1000000, b: 1000000, a: 0}
+    - _Q12_DistanceThresholds: {r: 0.55, g: 1, b: 0, a: 0}
+    - _Q1_Position: {r: -1.8, g: 1.038, b: 0, a: 0}
+    - _Q2_Position: {r: 1.8, g: 1.038, b: 0, a: 0}
+    - _Q3_DistanceThresholds: {r: 1.15, g: 1.52, b: 0, a: 0}
+    - _Q3_Position: {r: 0, g: -3, b: 0, a: 0}
+--- !u!114 &4311331578745345276
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
